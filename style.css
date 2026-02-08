@@ -1,0 +1,90 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(55, 55, 243), rgb(25, 24, 24));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background: #bcbcbc;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px ;
+    box-shadow:  0px 10px 25px rgba(0, 0,0,0.3);
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 10px 20px;
+    background: #c03f3f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: rgb(86, 38, 86);
+}
+
+.options button {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    color: #111;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.options button.correct {
+    background: #4CAF50;
+    color: white;
+}
+
+.options button.wrong {
+    background: #e53935;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+/* mobile optimisation */
+@media (max-width: 480px)  {
+    #question {
+        font-size: 16px;
+    }
+
+    .info {
+        font-size: 12px;
+    }
+}
+
+
